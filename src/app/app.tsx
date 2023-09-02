@@ -1,17 +1,7 @@
-import styled from '@emotion/styled';
-
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
+import Banner from './banner';
 
 export function App() {
-  return (
-    <StyledApp>
-      <NxWelcome title="kimballboardofed2023" />
-    </StyledApp>
-  );
+  return <Banner />;
 }
 
 export default App;
