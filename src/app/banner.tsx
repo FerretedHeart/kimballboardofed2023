@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import { Box, Button, ButtonGroup, Typography } from '@mui/material';
 
 export default function Banner() {
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -32,12 +34,51 @@ export default function Banner() {
           paddingTop: '10px',
         }}
       >
-        <Button sx={{ color: 'limegreen' }}>Home</Button>
-        <Button sx={{ color: 'limegreen' }}>Bio</Button>
-        <Button sx={{ color: 'limegreen' }}>News</Button>
-        <Button sx={{ color: 'limegreen' }}>Get Involved</Button>
-        <Button sx={{ color: 'limegreen' }}>About NL Greens</Button>
-        <Button sx={{ color: 'limegreen' }}>CT Voter Registration</Button>
+        <Button
+          onClick={() => {
+            navigate('/');
+          }}
+          sx={{ color: 'limegreen' }}
+        >
+          Home
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/bio');
+          }}
+          sx={{ color: 'limegreen' }}
+        >
+          Bio
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/news');
+          }}
+          sx={{ color: 'limegreen' }}
+        >
+          News
+        </Button>
+        <Button
+          href=" https://nlgreens.org/support.html"
+          target="_blank"
+          sx={{ color: 'limegreen' }}
+        >
+          Get Involved
+        </Button>
+        <Button
+          href="https://nlgreens.org/about.html"
+          target="_blank"
+          sx={{ color: 'limegreen' }}
+        >
+          About NL Greens
+        </Button>
+        <Button
+          href="https://voterregistration.ct.gov/OLVR/welcome.do"
+          target="_blank"
+          sx={{ color: 'limegreen' }}
+        >
+          CT Voter Registration
+        </Button>
       </ButtonGroup>
 
       <Typography
