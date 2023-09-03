@@ -1,8 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import Banner from './banner';
-import Bio from './bio';
+import Campaign from './campaign';
 import Home from './home';
 import News from './news';
+import Footer from './footer';
 
 export function App() {
   return (
@@ -10,9 +11,10 @@ export function App() {
       <Banner />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/bio" element={<Bio />}></Route>
+        <Route path="/campaign" element={<Campaign />}></Route>
         <Route path="/news" element={<News />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

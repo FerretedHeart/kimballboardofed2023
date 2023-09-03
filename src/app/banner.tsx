@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Box, Button, ButtonGroup, Typography } from '@mui/material';
+import { Box, Button, Stack, Typography } from '@mui/material';
 
 export default function Banner() {
   const navigate = useNavigate();
@@ -24,17 +24,9 @@ export default function Banner() {
       >
         Keith Kimball for Board of Ed
       </Typography>
-      <ButtonGroup
-        variant="text"
-        size="large"
-        aria-label="text button group"
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          paddingTop: '10px',
-        }}
-      >
+      <Stack spacing={2} direction="row">
         <Button
+          variant="outlined"
           onClick={() => {
             navigate('/');
           }}
@@ -44,11 +36,11 @@ export default function Banner() {
         </Button>
         <Button
           onClick={() => {
-            navigate('/bio');
+            navigate('/campaign');
           }}
           sx={{ color: 'limegreen' }}
         >
-          Bio
+          Campaign Info
         </Button>
         <Button
           onClick={() => {
@@ -79,8 +71,7 @@ export default function Banner() {
         >
           CT Voter Registration
         </Button>
-      </ButtonGroup>
-
+      </Stack>
       <Typography
         variant="h3"
         sx={{
