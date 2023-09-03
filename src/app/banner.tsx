@@ -27,6 +27,7 @@ export default function Banner() {
       <Stack spacing={2} direction="row">
         <Button
           variant="outlined"
+          color="success"
           onClick={() => {
             navigate('/');
           }}
@@ -35,6 +36,8 @@ export default function Banner() {
           Home
         </Button>
         <Button
+          variant="outlined"
+          color="success"
           onClick={() => {
             navigate('/campaign');
           }}
@@ -43,6 +46,8 @@ export default function Banner() {
           Campaign Info
         </Button>
         <Button
+          variant="outlined"
+          color="success"
           onClick={() => {
             navigate('/news');
           }}
@@ -51,6 +56,8 @@ export default function Banner() {
           News
         </Button>
         <Button
+          variant="outlined"
+          color="success"
           href=" https://nlgreens.org/support.html"
           target="_blank"
           sx={{ color: 'limegreen' }}
@@ -58,6 +65,8 @@ export default function Banner() {
           Get Involved
         </Button>
         <Button
+          variant="outlined"
+          color="success"
           href="https://nlgreens.org/about.html"
           target="_blank"
           sx={{ color: 'limegreen' }}
@@ -65,6 +74,8 @@ export default function Banner() {
           About NL Greens
         </Button>
         <Button
+          variant="outlined"
+          color="success"
           href="https://voterregistration.ct.gov/OLVR/welcome.do"
           target="_blank"
           sx={{ color: 'limegreen' }}
